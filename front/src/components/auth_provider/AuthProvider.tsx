@@ -8,7 +8,7 @@ interface Props {
 
 
 const AuthProvider = ({children} : Props) => {
-  const [isAuth] = useState(false);
+  const [isAuth] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
