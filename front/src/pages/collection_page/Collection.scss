@@ -1,0 +1,18 @@
+.containerCollection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.cardsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  overflow-y: scroll;
+  flex: 1;
+}

@@ -1,0 +1,99 @@
+body {
+  -webkit-animation-name: bgcolor;
+  -webkit-animation-duration: 60s;
+  animation-name: bgcolor;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bgcolor {
+  0% {
+    background: url("./assets/bg1.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  5% {
+    background: url("./assets/bg2.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  20% {
+    background: url("./assets/bg3.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  35% {
+    background: url("./assets/bg4.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  50% {
+    background: url("./assets/bg5.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  65% {
+    background: url("./assets/bg6.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  80% {
+    background: url("./assets/bg7.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  100% {
+    background: url("./assets/bg8.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background: url("./assets/bg1.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  14.3% {
+    background: url("./assets/bg2.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  28.6% {
+    background: url("./assets/bg3.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  42.9% {
+    background: url("./assets/bg4.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  57% {
+    background: url("./assets/bg5.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  71% {
+    background: url("./assets/bg6.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  85.6% {
+    background: url("./assets/bg7.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+  100% {
+    background: url("./assets/bg8.webp") no-repeat top center;
+    background-size: cover;
+    transition: 250ms;
+  }
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100vh;
+  width: 100vw;
+}
