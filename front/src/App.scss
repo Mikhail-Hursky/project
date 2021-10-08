@@ -6,6 +6,12 @@ body {
   animation-iteration-count: infinite;
 }
 
+.filter {
+  background-color: rgba(0, 0, 0, .7);
+  height: 100vh;
+  width: 100vw;
+}
+
 @-webkit-keyframes bgcolor {
   0% {
     background: url("./assets/bg1.webp") no-repeat top center;
@@ -90,10 +96,4 @@ body {
     background-size: cover;
     transition: 250ms;
   }
-}
-
-.filter {
-  background-color: rgba(0, 0, 0, .7);
-  height: 100vh;
-  width: 100vw;
 }
