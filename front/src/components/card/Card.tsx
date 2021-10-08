@@ -30,6 +30,7 @@ const Card = ({spells, champ}: Props) => {
               content={`P: ${champ.passive.name}`}
               trigger={
                 <Image className='card__ability-img'
+                       circular
                        src={`http://ddragon.leagueoflegends.com/cdn/11.19.1/img/passive/${champ.passive.image.full}`}
                        alt="passive"/>
               }/>
@@ -37,10 +38,12 @@ const Card = ({spells, champ}: Props) => {
               spells.map((el, index) => {
                 return (
                   <Popup
+                    key={`${abilityKey[index]}: ${el.name}`}
                     position={`bottom ${abilityKey[index] === 'R' ? 'right' : 'center'}`}
                     content={`${abilityKey[index]}: ${el.name}`}
                     trigger={
                       <Image className='card__ability-img'
+                             circular
                              src={`http://ddragon.leagueoflegends.com/cdn/11.20.1/img/spell/${el.image.full}`}
                              alt={abilityKey[index]}/>
                     }/>
