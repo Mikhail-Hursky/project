@@ -2,6 +2,7 @@ import React from 'react';
 import {Container} from "semantic-ui-react";
 import {Route, Switch} from 'react-router-dom';
 import CollectionPage from "./pages/collection_page/CollectionPage";
+import ChampionPage from "./pages/champion_page/ChampionPage";
 import './App.scss'
 
 const App = () => (
@@ -10,7 +11,7 @@ const App = () => (
       <Container>
         <Route path="/collection/:nameId">
           <>
-            <h1>collection/namssss</h1>
+            <ChampionPage />
           </>
         </Route>
         <Route path="/collection" exact>
