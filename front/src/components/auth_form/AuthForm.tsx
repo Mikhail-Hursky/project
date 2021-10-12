@@ -10,7 +10,7 @@ const AuthForm = () => {
 
   return (
     <Container textAlign='center'>
-      <Logo />
+      <Logo/>
       <div className='authForm'>
         <h2>{isRegistration ? 'Registration' : 'Login'}</h2>
         {isRegistration ? (<RegForm/>) : (<LoginForm/>)}
@@ -19,7 +19,7 @@ const AuthForm = () => {
           color='orange'
           onClick={() => setIsRegistration(prev => !prev)}
         >
-          {!isRegistration ? 'Registration new account' : 'Sign up'}
+          {isRegistration ? 'Sign up' : 'Registration new account'}
         </Button>
       </div>
     </Container>

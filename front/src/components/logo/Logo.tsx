@@ -2,10 +2,11 @@ import React from 'react';
 import LogoSvg from "../../svg/LogoSvg";
 import './Logo.scss'
 import {Link} from "react-router-dom";
+import {COLLECTION} from "../../Constants";
 
 const Logo = () => {
   return (
-    <Link to='/collection'>
+    <Link to={COLLECTION}>
       <h1 className='logo'><LogoSvg /> Champions</h1>
     </Link>
   );

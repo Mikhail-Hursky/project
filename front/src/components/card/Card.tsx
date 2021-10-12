@@ -4,8 +4,9 @@ import {Image, Popup} from 'semantic-ui-react'
 import IChampion from "../../dto/IChampion";
 import ISpell from '../../dto/ISpell';
 import './Card.scss'
+import {COLLECTION} from "../../Constants";
 
-const abilityKey = ['Q', 'W', 'E', 'R']
+const abilityKey: string[] = ['Q', 'W', 'E', 'R']
 
 interface Props {
   spells: ISpell[],
@@ -15,7 +16,7 @@ interface Props {
 const Card = ({spells, champ}: Props) => {
   return (
     <>
-      <Link to={`/collection/${champ.id}`}>
+      <Link to={`${COLLECTION}/${champ.id}`}>
         <div className='card' style={{
           background: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champ.id}_0.jpg) no-repeat`,
         }}
@@ -54,7 +55,6 @@ const Card = ({spells, champ}: Props) => {
         </div>
       </Link>
     </>
-
   );
 }
 

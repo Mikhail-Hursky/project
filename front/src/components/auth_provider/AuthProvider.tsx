@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
 import AuthPage from "../../pages/auth_page/AuthPage";
+import {COLLECTION} from "../../Constants";
 
 interface Props {
   children: JSX.Element
@@ -13,7 +14,7 @@ const AuthProvider = ({children} : Props) => {
 
   useEffect(() => {
     if (isAuth) {
-      history.push(history.location.pathname === '/' ? '/collection' : history.location.pathname)
+      history.push(history.location.pathname === '/' ? COLLECTION : history.location.pathname)
     }
   },[isAuth])
   

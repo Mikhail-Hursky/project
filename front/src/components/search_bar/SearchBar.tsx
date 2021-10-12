@@ -6,17 +6,19 @@ import './SearchBar.scss';
 
 function SearchBar() {
   const [isLoading, setIsLoading] = useState(false);
-  const handleChange = useCallback(debounce((e: ChangeEvent<HTMLInputElement>) => {
+  const sendRequest = useCallback(debounce((e: ChangeEvent<HTMLInputElement>) => {
     setIsLoading(false)
   }, 400), [])
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setIsLoading(true)
+    sendRequest(e)
+  }
 
   return (
     <header className='searchBar'>
       <Logo/>
-      <Input loading={isLoading} onChange={(e) => {
-        setIsLoading(true)
-        handleChange(e)
-      }} className='searchBar__input' placeholder='Search champion...'/>
+      <Input loading={isLoading} onChange={handleChange} className='searchBar__input' placeholder='Search champion...'/>
     </header>
   );
 }
