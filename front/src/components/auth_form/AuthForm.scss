@@ -1,0 +1,26 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: rgba(41, 44, 49, 0.7);
+  color: #FFFFFF;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  .ui.form .field>label {
+      color: #FFFFFF;
+  }
+
+  .btnSwitch {
+    margin-top: 15px;
+    align-self: end;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #FFFFFF;
+}
