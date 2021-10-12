@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 import {Image, Popup} from 'semantic-ui-react'
 import IChampion from "../../dto/IChampion";
 import ISpell from '../../dto/ISpell';
+import {CARD_IMG, COLLECTION, PASSIVE_IMG, SPELL_IMG} from "../../Constants";
 import './Card.scss'
-import {COLLECTION} from "../../Constants";
 
 const abilityKey: string[] = ['Q', 'W', 'E', 'R']
 
@@ -18,7 +18,7 @@ const Card = ({spells, champ}: Props) => {
     <>
       <Link to={`${COLLECTION}/${champ.id}`}>
         <div className='card' style={{
-          background: `url(http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champ.id}_0.jpg) no-repeat`,
+          background: `url(${CARD_IMG}${champ.id}_0.jpg) no-repeat`,
         }}
         >
           <div className="card__name">
@@ -32,7 +32,7 @@ const Card = ({spells, champ}: Props) => {
               trigger={
                 <Image className='card__ability-img'
                        circular
-                       src={`http://ddragon.leagueoflegends.com/cdn/11.19.1/img/passive/${champ.passive.image.full}`}
+                       src={`${PASSIVE_IMG}${champ.passive.image.full}`}
                        alt="passive"/>
               }/>
             {
@@ -45,7 +45,7 @@ const Card = ({spells, champ}: Props) => {
                     trigger={
                       <Image className='card__ability-img'
                              circular
-                             src={`http://ddragon.leagueoflegends.com/cdn/11.20.1/img/spell/${el.image.full}`}
+                             src={`${SPELL_IMG}${el.image.full}`}
                              alt={abilityKey[index]}/>
                     }/>
                 )
