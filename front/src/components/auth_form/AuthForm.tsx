@@ -1,10 +1,8 @@
 import React, {useState} from 'react';
 import {Button, Container, Form} from "semantic-ui-react";
-import {useFormik} from 'formik';
-import * as Yup from 'yup';
-import Logo from "../../svg/Logo";
 import RegForm from "./RegForm";
 import LoginForm from "./LoginForm";
+import Logo from "../logo/Logo";
 import './AuthForm.scss'
 
 const AuthForm = () => {
@@ -12,7 +10,7 @@ const AuthForm = () => {
 
   return (
     <Container textAlign='center'>
-      <h1 className='logo'><Logo/> Champions</h1>
+      <Logo />
       <div className='authForm'>
         <h2>{isRegistration ? 'Registration' : 'Login'}</h2>
         {isRegistration ? (<RegForm/>) : (<LoginForm/>)}

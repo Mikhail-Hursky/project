@@ -1,0 +1,27 @@
+.containerCollection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  padding-bottom: 15px;
+}
+
+.cardsBlock {
+  transition: .5s all ease;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  grid-gap: 25px;
+  overflow-y: scroll;
+  flex: 1;
+  @media screen and (max-width: 984px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 651px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
