@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useHistory} from "react-router-dom";
-import AuthPage from "../../pages/auth_page/AuthPage";
+import AuthPage from "../../pages/authPage/AuthPage";
 import {COLLECTION} from "../../Constants";
 
 interface Props {

@@ -1,5 +1,5 @@
 import React from 'react';
-import AuthForm from '../../components/auth_form/AuthForm';
+import AuthForm from '../../components/authForm/AuthForm';
 import './AuthPage.scss';
 
 const AuthPage = () => (

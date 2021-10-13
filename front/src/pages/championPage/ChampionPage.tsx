@@ -1,7 +1,7 @@
 import React from 'react';
 import {useHistory} from "react-router-dom";
 import Logo from "../../components/logo/Logo";
-import Description from "../../components/description_champion/Description";
+import Description from "../../components/descriptionChampion/Description";
 import {championsFull} from "../../mock/Champions";
 import Slider from "../../components/slider/Slider";
 import './ChampionPage.scss'
