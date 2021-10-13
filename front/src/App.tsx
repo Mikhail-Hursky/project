@@ -11,14 +11,10 @@ const App = () => (
     <Switch>
       <Container>
         <Route path={COLLECTION_CHAMPION}>
-          <>
-            <ChampionPage />
-          </>
+          <ChampionPage/>
         </Route>
         <Route path={COLLECTION} exact>
-          <>
-            <CollectionPage/>
-          </>
+          <CollectionPage/>
         </Route>
       </Container>
     </Switch>

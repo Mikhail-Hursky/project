@@ -1,8 +1,8 @@
 import React from 'react';
-import LogoSvg from "../../svg/LogoSvg";
-import './Logo.scss'
 import {Link} from "react-router-dom";
+import LogoSvg from "../../svg/LogoSvg";
 import {COLLECTION} from "../../Constants";
+import './Logo.scss'
 
 const Logo = () => {
   return (

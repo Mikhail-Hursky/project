@@ -1,7 +1,7 @@
 import IChampion from "../dto/IChampion";
 import {IChampionFull} from "../dto/IChampuionFull";
 
-export const Champions: IChampion[] = [
+export const champions: IChampion[] = [
   {
     id: "Aatrox",
     spells: [{
@@ -985,7 +985,7 @@ export const Champions: IChampion[] = [
   },
 ];
 
-export const ChampionsFull: IChampionFull[] = [
+export const championsFull: IChampionFull[] = [
   {
     id: "Aatrox",
     name: "Aatrox",

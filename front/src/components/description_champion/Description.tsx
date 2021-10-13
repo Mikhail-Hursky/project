@@ -45,7 +45,7 @@ const Description = ({ name, lore, passive, spells, identifier, tittle }: Props)
                 />
                 <div className='info'>
                   <h3>{el.name}</h3>
-                  {el.cooldownBurn ? <p>{el.cooldownBurn + " sec"}</p> : <></>}
+                  {el.cooldownBurn && <p>{el.cooldownBurn + " sec"}</p>}
                   <p>{el.description}</p>
                 </div>
               </div>
