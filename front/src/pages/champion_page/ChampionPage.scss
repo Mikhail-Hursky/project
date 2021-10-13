@@ -1,4 +1,7 @@
 .championPage {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
   &__header {
     padding-top: 10px;
     display: flex;

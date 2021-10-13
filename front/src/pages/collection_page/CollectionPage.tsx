@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Pagination} from "semantic-ui-react";
 import Card from '../../components/card/Card';
 import SearchBar from "../../components/search_bar/SearchBar";
-import Champions from "../../mock/Champions";
+import {Champions} from "../../mock/Champions";
 import './Collection.scss'
 
 function CollectionPage() {
