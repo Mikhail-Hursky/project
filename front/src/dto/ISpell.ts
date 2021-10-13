@@ -1,6 +1,6 @@
 import Image from "./IImage";
 
-export default interface Spell {
+export default interface ISpell {
   id: string,
   name: string,
   description: string,

@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {Image, Popup} from 'semantic-ui-react'
-import IChampion from "../../dto/IChampion";
 import ISpell from '../../dto/ISpell';
+import IPassive from "../../dto/IPassive";
 import {CARD_IMG, COLLECTION, PASSIVE_IMG, SPELL_IMG} from "../../Constants";
 import './Card.scss'
 
@@ -10,29 +10,32 @@ const abilityKey: string[] = ['Q', 'W', 'E', 'R']
 
 interface Props {
   spells: ISpell[],
-  champ: IChampion,
+  identifier: string,
+  name: string,
+  tittle: string,
+  passive: IPassive,
 }
 
-const Card = ({spells, champ}: Props) => {
+const Card = ({spells, identifier, name, tittle, passive}: Props) => {
   return (
     <>
-      <Link to={`${COLLECTION}/${champ.id}`}>
+      <Link to={`${COLLECTION}/${identifier}`}>
         <div className='card' style={{
-          background: `url(${CARD_IMG}${champ.id}_0.jpg) no-repeat`,
+          background: `url(${CARD_IMG}${identifier}_0.jpg) no-repeat`,
         }}
         >
           <div className="card__name">
-            <h2>{champ.name}</h2>
-            <h3>{champ.title}</h3>
+            <h2>{name}</h2>
+            <h3>{tittle}</h3>
           </div>
           <div className='card__ability'>
             <Popup
               position='bottom left'
-              content={`P: ${champ.passive.name}`}
+              content={`P: ${passive.name}`}
               trigger={
                 <Image className='card__ability-img'
                        circular
-                       src={`${PASSIVE_IMG}${champ.passive.image.full}`}
+                       src={`${PASSIVE_IMG}${passive.image.full}`}
                        alt="passive"/>
               }/>
             {

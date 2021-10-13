@@ -11,7 +11,15 @@ function CollectionPage() {
     <div className='containerCollection'>
       <SearchBar/>
       <div className='cardsBlock'>
-        {arr.map(el => <Card key={el.id} spells={el.spells} champ={el}/>)}
+        {arr.map(el =>
+          <Card
+            key={el.id}
+            spells={el.spells}
+            identifier={el.id}
+            name={el.name}
+            tittle={el.title}
+            passive={el.passive}
+          />)}
       </div>
       <Pagination
         boundaryRange={0}

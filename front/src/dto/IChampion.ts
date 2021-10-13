@@ -1,18 +1,13 @@
-import Spell from "./ISpell";
+import ISpell from "./ISpell";
 import Image from "./IImage";
+import IPassive from "./IPassive";
 
 export default interface IChampion {
   id: string,
-  spells: Spell[],
-  blurb: string,
-  key: string,
+  spells: ISpell[],
   name: string,
   title: string,
   image: Image,
-  passive: {
-    name: string,
-    description: string,
-    image: Image
-  }
+  passive: IPassive
 }
 
