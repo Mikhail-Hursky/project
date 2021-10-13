@@ -1,31 +1,38 @@
 import React from "react";
-import Slider from "react-slick";
+import Slider, {LazyLoadTypes, Settings, ResponsiveObject} from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {ISkin} from "../../dto/IChampuionFull";
 import {SPLASH_IMG} from "../../Constants";
 import './Slider.scss'
 
+const lazyLoad: LazyLoadTypes = 'ondemand'
+const settingTablet: Settings = {
+  arrows: false,
+}
+const responsive: ResponsiveObject[] = [{
+  breakpoint: 768,
+  settings: settingTablet
+}]
+
+const settings: Settings = {
+  lazyLoad,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  className: 'slider',
+  initialSlide: 2,
+  responsive,
+};
+
 interface Props {
   skins: ISkin[],
   name: string
 }
 
-type LazyLoadTypes = "ondemand" | "progressive";
-
 const SliderChamp = ({skins, name}: Props) => {
-
-  const lazyLoad: LazyLoadTypes = 'ondemand'
-  const settings = {
-    lazyLoad,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    className: 'slider',
-    initialSlide: 2,
-  };
   return (
     <div className='block__slider'>
       <h2 className='block__slider--tittle'>Skins</h2>
