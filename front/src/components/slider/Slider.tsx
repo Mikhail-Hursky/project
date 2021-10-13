@@ -38,7 +38,7 @@ const SliderChamp = ({skins, name}: Props) => {
       <h2 className='block__slider--tittle'>Skins</h2>
       <Slider {...settings}>
         {skins.map(el =>
-          <div className='slider__item'>
+          <div key={el.name} className='slider__item'>
             <img src={`${SPLASH_IMG}${name}_${el.num}.jpg`} alt=""/>
             <h3>{el.name === 'default' ? name : el.name}</h3>
           </div>)}

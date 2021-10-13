@@ -1,10 +1,9 @@
 import React from 'react';
 import {Image} from "semantic-ui-react";
-import {IChampionFull} from "../../dto/IChampuionFull";
 import {CARD_IMG, PASSIVE_IMG, SPELL_IMG} from "../../Constants";
-import './Description.scss'
 import IPassive from "../../dto/IPassive";
 import ISpell from "../../dto/ISpell";
+import './Description.scss'
 
 interface Props {
   identifier: string,
@@ -37,7 +36,7 @@ const Description = ({ name, lore, passive, spells, identifier, tittle }: Props)
           </div>
           {
             spells.map(el =>
-              <div className="description__ability--information">
+              <div key={el.id} className="description__ability--information">
                 <Image
                   key={el.id}
                   circular
