@@ -1,17 +1,25 @@
 import React, {useState} from 'react';
 import {Pagination} from "semantic-ui-react";
 import Card from '../../components/card/Card';
-import SearchBar from "../../components/search_bar/SearchBar";
-import Champions from "../../mock/Champions";
+import SearchBar from "../../components/searchBar/SearchBar";
+import {champions} from "../../mock/Champions";
 import './Collection.scss'
 
 function CollectionPage() {
-  const [arr, setArr] = useState(Champions);
+  const [championCards, setChampionCards] = useState(champions)
   return (
     <div className='containerCollection'>
       <SearchBar/>
       <div className='cardsBlock'>
-        {arr.map(el => <Card key={el.id} spells={el.spells} champ={el}/>)}
+        {championCards.map(el =>
+          <Card
+            key={el.id}
+            spells={el.spells}
+            identifier={el.id}
+            name={el.name}
+            tittle={el.title}
+            passive={el.passive}
+          />)}
       </div>
       <Pagination
         boundaryRange={0}
