@@ -29,6 +29,7 @@
       .info {
         flex: 1;
         h3 {
+          color: #FFFFFF;
           margin-bottom: 10px;
         }
         p {
@@ -40,10 +41,10 @@
   }
 
   &__image {
-    color: #FFFFFF;
     text-align: center;
 
     h2 {
+      color: #FFFFFF;
       font-size: 30px;
     }
 
@@ -54,14 +55,14 @@
 }
 
 .lore {
-  color: #FFFFFF;
-
   h2 {
+    color: #FFFFFF;
     text-align: center;
     font-size: 30px;
   }
 
   p {
+    color: #FFFFFF;
     padding: 0 20px;
     font-size: 20px;
   }

@@ -11,6 +11,14 @@
     gap: 30px;
   }
 
+  .pagination {
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
 }
 
 .cardsBlock {
@@ -20,7 +28,7 @@
   grid-row: auto;
   grid-gap: 25px;
   overflow-y: scroll;
-  flex: 1;
+  flex: 10;
   @media screen and (max-width: 984px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -28,4 +36,6 @@
   @media screen and (max-width: 651px) {
     grid-template-columns: repeat(1, 1fr);
   }
+
+
 }
