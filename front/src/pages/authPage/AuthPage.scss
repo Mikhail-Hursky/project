@@ -1,0 +1,11 @@
+@import "../../global";
+
+.AuthPage {
+  width: 100vw;
+  height: 100vh;
+  background: $bg url("../../assets/bg.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
