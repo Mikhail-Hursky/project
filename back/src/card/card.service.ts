@@ -1,8 +1,7 @@
-import {Injectable} from '@nestjs/common';
+import {HttpException, HttpStatus, Injectable} from '@nestjs/common';
 import {InjectModel} from "@nestjs/mongoose";
 import {CardDocument} from "../shemas/card.schema";
 import {Model} from "mongoose";
-import {filter} from "rxjs";
 import {FullDocument} from "../shemas/full.schema";
 
 @Injectable()
@@ -20,7 +19,14 @@ export class CardService {
   }
 
   async getFullCard(id: string) {
-    return this.fullModel.findOne({id})
+    const champion = await this.fullModel.findOne({id})
+    if (!champion) {
+      return new HttpException({
+        status: HttpStatus.NOT_FOUND,
+        error: 'Champion not found!',
+      }, HttpStatus.NOT_FOUND);
+    }
+    return champion
   }
 
 }
