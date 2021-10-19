@@ -1,41 +1,40 @@
-import {Prop, Schema, SchemaFactory} from '@nestjs/mongoose';
-import {Document} from 'mongoose';
-import ISpell, {IImage} from "../dto/card.dto";
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { Document } from 'mongoose';
+import ISpell, { IImage } from '../dto/card.dto';
 
 export type FullDocument = Full & Document;
 
 @Schema()
 export class Full {
-  @Prop({type: String, required: true})
-  id: string
+  @Prop({ type: String, required: true })
+  id: string;
 
-  spells: ISpell[]
+  spells: ISpell[];
 
-  @Prop({type: String, required: true})
-  name: string
+  @Prop({ type: String, required: true })
+  name: string;
 
-  title: string
+  title: string;
 
-  image: IImage
+  image: IImage;
 
-  lore: string
+  lore: string;
 
-  skins: IImage[]
+  skins: IImage[];
 
   passive: {
-    name: string
-    description: string
+    name: string;
+    description: string;
     image: {
-      full: string
-      sprite: string
-      group: string,
-      x: number,
-      y: number,
-      w: number,
-      h: number
-    }
-  }
-
+      full: string;
+      sprite: string;
+      group: string;
+      x: number;
+      y: number;
+      w: number;
+      h: number;
+    };
+  };
 }
 
 export const FullSchema = SchemaFactory.createForClass(Full);

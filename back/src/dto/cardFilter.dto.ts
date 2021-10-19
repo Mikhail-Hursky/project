@@ -1,5 +1,5 @@
 export default interface CardFilter {
-  id: string,
-  pageSize: string,
-  page: string,
+  id: string;
+  pageSize: string;
+  page: string;
 }

@@ -1,4 +1,4 @@
 export default interface CardPaginationSettingsDto {
-  pageSize: string,
-  page: string
+  pageSize: string;
+  page: string;
 }
