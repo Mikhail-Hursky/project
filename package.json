@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startBack": "cd ./back && npm run start:prod",
+    "startBack": "cd ./back && npm install && npm run start:prod",
     "startFront": "cd ./front && yarn start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
