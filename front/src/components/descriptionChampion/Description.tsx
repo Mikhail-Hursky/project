@@ -20,7 +20,7 @@ const Description = ({
   passive,
   spells,
   identifier,
-  tittle,
+  tittle
 }: Props) => {
   return (
     <>
@@ -45,7 +45,7 @@ const Description = ({
               <p>{passive.description}</p>
             </div>
           </div>
-          {spells.map((el) => (
+          {spells.map(el => (
             <div key={el.id} className="description__ability--information">
               <Image
                 key={el.id}

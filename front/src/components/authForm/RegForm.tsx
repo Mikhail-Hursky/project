@@ -8,7 +8,7 @@ const RegForm = () => {
     initialValues: {
       name: '',
       email: '',
-      password: '',
+      password: ''
     },
     validationSchema: Yup.object().shape({
       name: Yup.string().required('Required to fill'),
@@ -17,11 +17,11 @@ const RegForm = () => {
         .required('Required to fill'),
       password: Yup.string()
         .min(6, '6 to 16 characters')
-        .required('Required to fill'),
+        .required('Required to fill')
     }),
-    onSubmit: (values) => {
+    onSubmit: values => {
       alert(JSON.stringify(values, null, 2));
-    },
+    }
   });
 
   return (

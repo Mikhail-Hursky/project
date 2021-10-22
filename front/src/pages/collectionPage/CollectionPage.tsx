@@ -15,7 +15,7 @@ function CollectionPage() {
   const [championCards, setChampionCards] = useState<IChampion[]>([]);
   const [pageSetting, setPageSetting] = useState({
     page: 1,
-    pageSize: 24,
+    pageSize: 24
   });
 
   useEffect(() => {
@@ -30,8 +30,8 @@ function CollectionPage() {
     if (!filter) setChampionCards(cards);
     else {
       const regex = new RegExp(filter, 'i');
-      setChampionCards(cards.filter((el) => el.name.match(regex)));
-      setPageSetting((prev) => ({ ...prev, page: 1 }));
+      setChampionCards(cards.filter(el => el.name.match(regex)));
+      setPageSetting(prev => ({ ...prev, page: 1 }));
     }
   }, [filter]);
 
@@ -41,7 +41,7 @@ function CollectionPage() {
 
   const onChange = (pageNumber: number) => {
     cardBlock.current?.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
-    setPageSetting((prev) => ({ ...prev, page: pageNumber }));
+    setPageSetting(prev => ({ ...prev, page: pageNumber }));
   };
 
   return (
@@ -57,7 +57,7 @@ function CollectionPage() {
                 (pageSetting.page - 1) * pageSetting.pageSize,
                 pageSetting.page * pageSetting.pageSize
               )
-              .map((el) => (
+              .map(el => (
                 <Card
                   key={el.id}
                   spells={el.spells}

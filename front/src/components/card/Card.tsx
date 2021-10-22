@@ -23,7 +23,7 @@ const Card = ({ spells, identifier, name, tittle, passive }: Props) => {
         <div
           className="card"
           style={{
-            background: `url(${CARD_IMG}${identifier}_0.jpg) no-repeat`,
+            background: `url(${CARD_IMG}${identifier}_0.jpg) no-repeat`
           }}
         >
           <div className="card__name">

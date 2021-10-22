@@ -17,8 +17,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ qbasedamage }} -> {{ qbasedamageNL }}',
-            '{{ qtotaladratio*100.000000 }}% -> {{ qtotaladrationl*100.000000 }}%',
-          ],
+            '{{ qtotaladratio*100.000000 }}% -> {{ qtotaladrationl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [14, 12, 10, 8, 6],
@@ -37,7 +37,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -52,9 +52,9 @@ export const champions: IChampion[] = [
           x: 240,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxW',
@@ -67,8 +67,8 @@ export const champions: IChampion[] = [
           label: ['Cooldown', 'Damage'],
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ wbasedamage }} -> {{ wbasedamageNL }}',
-          ],
+            '{{ wbasedamage }} -> {{ wbasedamageNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [20, 18.5, 17, 15.5, 14],
@@ -87,7 +87,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -102,9 +102,9 @@ export const champions: IChampion[] = [
           x: 288,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxE',
@@ -118,8 +118,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ espellvamp }}% -> {{ espellvampNL }}%',
-            '{{ espellvampempowered }}% -> {{ espellvampempoweredNL }}%',
-          ],
+            '{{ espellvampempowered }}% -> {{ espellvampempoweredNL }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [9, 8, 7, 6, 5],
@@ -138,7 +138,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -153,9 +153,9 @@ export const champions: IChampion[] = [
           x: 336,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxR',
@@ -169,14 +169,14 @@ export const champions: IChampion[] = [
             'Total Attack Damage Increase',
             'Healing Increase',
             'Move Speed',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ rtotaladamp*100.000000 }}% -> {{ rtotaladampnl*100.000000 }}%',
             '{{ rhealingamp*100.000000 }}% -> {{ rhealingampnl*100.000000 }}%',
             '{{ rmovementspeedbonus*100.000000 }}% -> {{ rmovementspeedbonusnl*100.000000 }}%',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -195,7 +195,7 @@ export const champions: IChampion[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -210,10 +210,10 @@ export const champions: IChampion[] = [
           x: 384,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
-      },
+        resource: 'No Cost'
+      }
     ],
     name: 'Aatrox',
     title: 'the Darkin Blade',
@@ -224,7 +224,7 @@ export const champions: IChampion[] = [
       x: 0,
       y: 0,
       w: 48,
-      h: 48,
+      h: 48
     },
     passive: {
       name: 'Deathbringer Stance',
@@ -237,9 +237,9 @@ export const champions: IChampion[] = [
         x: 0,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Annie',
@@ -255,8 +255,8 @@ export const champions: IChampion[] = [
           label: ['Damage', '@AbilityResourceName@ Cost'],
           effect: [
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [4, 4, 4, 4, 4],
@@ -275,7 +275,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -290,9 +290,9 @@ export const champions: IChampion[] = [
           x: 144,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieW',
@@ -305,8 +305,8 @@ export const champions: IChampion[] = [
           label: ['Damage', '@AbilityResourceName@ Cost'],
           effect: [
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [8, 8, 8, 8, 8],
@@ -325,7 +325,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -340,9 +340,9 @@ export const champions: IChampion[] = [
           x: 192,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieE',
@@ -356,8 +356,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ shieldamount }} -> {{ shieldamountNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ damagereflection }} -> {{ damagereflectionNL }}',
-          ],
+            '{{ damagereflection }} -> {{ damagereflectionNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [14, 13, 12, 11, 10],
@@ -376,7 +376,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -391,9 +391,9 @@ export const champions: IChampion[] = [
           x: 240,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieR',
@@ -409,7 +409,7 @@ export const champions: IChampion[] = [
             'Aura Damage',
             'Tibbers Attack Damage',
             'Bonus Resistances',
-            'Bonus Health',
+            'Bonus Health'
           ],
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
@@ -417,8 +417,8 @@ export const champions: IChampion[] = [
             '{{ auradamage }} -> {{ auradamageNL }}',
             '{{ tibbersattackdamage }} -> {{ tibbersattackdamageNL }}',
             '{{ bonusresistances }} -> {{ bonusresistancesNL }}',
-            '{{ bonushealth }} -> {{ bonushealthNL }}',
-          ],
+            '{{ bonushealth }} -> {{ bonushealthNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -437,7 +437,7 @@ export const champions: IChampion[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -452,10 +452,10 @@ export const champions: IChampion[] = [
           x: 288,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
     name: 'Annie',
     title: 'the Dark Child',
@@ -466,7 +466,7 @@ export const champions: IChampion[] = [
       x: 336,
       y: 0,
       w: 48,
-      h: 48,
+      h: 48
     },
     passive: {
       name: 'Pyromania',
@@ -479,9 +479,9 @@ export const champions: IChampion[] = [
         x: 336,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Anivia',
@@ -499,15 +499,15 @@ export const champions: IChampion[] = [
             'Detonation Damage',
             'Stun Duration',
             'Cooldown',
-            '@AbilityResourceName@ Cost',
+            '@AbilityResourceName@ Cost'
           ],
           effect: [
             '{{ passthroughbasedamage }} -> {{ passthroughbasedamageNL }}',
             '{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}',
             '{{ stunduration }} -> {{ stundurationNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [11, 10, 9, 8, 7],
@@ -526,7 +526,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -541,9 +541,9 @@ export const champions: IChampion[] = [
           x: 432,
           y: 144,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'Crystallize',
@@ -554,7 +554,7 @@ export const champions: IChampion[] = [
           'Anivia summons a wall of ice {{ e2 }} units wide. The wall lasts for {{ e1 }} seconds before it melts.',
         leveltip: {
           label: ['Width'],
-          effect: ['{{ e2 }} -> {{ e2NL }}'],
+          effect: ['{{ e2 }} -> {{ e2NL }}']
         },
         maxrank: 5,
         cooldown: [17, 17, 17, 17, 17],
@@ -573,7 +573,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -586,7 +586,7 @@ export const champions: IChampion[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -600,9 +600,9 @@ export const champions: IChampion[] = [
           x: 0,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'Frostbite',
@@ -613,7 +613,7 @@ export const champions: IChampion[] = [
           'Anivia blasts an enemy with a freezing wind, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Against <keywordMajor>Chilled</keywordMajor> enemies, Anivia deals <magicDamage>{{ empowereddamage }} magic damage</magicDamage> instead.',
         leveltip: {
           label: ['Damage'],
-          effect: ['{{ basedamage }} -> {{ basedamageNL }}'],
+          effect: ['{{ basedamage }} -> {{ basedamageNL }}']
         },
         maxrank: 5,
         cooldown: [4, 4, 4, 4, 4],
@@ -632,7 +632,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -647,9 +647,9 @@ export const champions: IChampion[] = [
           x: 48,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'GlacialStorm',
@@ -664,15 +664,15 @@ export const champions: IChampion[] = [
             'Slow',
             'Chilled Slow Amount',
             'Mana Cost Per Second',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ damagepersecond }} -> {{ damagepersecondNL }}',
             '{{ slowamount }}% -> {{ slowamountNL }}%',
             '{{ slowpercentempoweredtt }}% -> {{ slowpercentempoweredttNL }}%',
             '{{ manacostpersecond }} -> {{ manacostpersecondNL }}',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [4, 3, 2],
@@ -691,7 +691,7 @@ export const champions: IChampion[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -706,10 +706,10 @@ export const champions: IChampion[] = [
           x: 96,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} + {{ manacostpersecond }} Mana per second',
-      },
+        resource: '{{ cost }} + {{ manacostpersecond }} Mana per second'
+      }
     ],
     name: 'Anivia',
     title: 'the Cryophoenix',
@@ -720,7 +720,7 @@ export const champions: IChampion[] = [
       x: 288,
       y: 0,
       w: 48,
-      h: 48,
+      h: 48
     },
     passive: {
       name: 'Rebirth',
@@ -733,9 +733,9 @@ export const champions: IChampion[] = [
         x: 288,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Camille',
@@ -752,8 +752,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ tadratio*100.000000 }}% -> {{ tadrationl*100.000000 }}%',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ msbonus*100.000000 }}% -> {{ msbonusnl*100.000000 }}%',
-          ],
+            '{{ msbonus*100.000000 }}% -> {{ msbonusnl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [9, 8.25, 7.5, 6.75, 6],
@@ -772,7 +772,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -787,9 +787,9 @@ export const champions: IChampion[] = [
           x: 144,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleW',
@@ -803,14 +803,14 @@ export const champions: IChampion[] = [
             '@AbilityResourceName@ Cost',
             'Damage',
             'Maximum Health Damage',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ cost }} -> {{ costNL }}',
             '{{ basedamage }} -> {{ basedamageNL }}',
             '{{ outerconemaxhpdamage*100.000000 }}% -> {{ outerconemaxhpdamagenl*100.000000 }}%',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [17, 15.5, 14, 12.5, 11],
@@ -829,7 +829,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -844,9 +844,9 @@ export const champions: IChampion[] = [
           x: 192,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleE',
@@ -860,8 +860,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ asbuff*100.000000 }}% -> {{ asbuffnl*100.000000 }}%',
-          ],
+            '{{ asbuff*100.000000 }}% -> {{ asbuffnl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [16, 14.5, 13, 11.5, 10],
@@ -880,7 +880,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -895,9 +895,9 @@ export const champions: IChampion[] = [
           x: 240,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleR',
@@ -911,14 +911,14 @@ export const champions: IChampion[] = [
             'Duration',
             'Cooldown',
             'Bonus Damage',
-            'Current Health Damage',
+            'Current Health Damage'
           ],
           effect: [
             '{{ rduration }} -> {{ rdurationNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ ronhitdamage }} -> {{ ronhitdamageNL }}',
-            '{{ rpercentcurrenthpdamage }}% -> {{ rpercentcurrenthpdamageNL }}%',
-          ],
+            '{{ rpercentcurrenthpdamage }}% -> {{ rpercentcurrenthpdamageNL }}%'
+          ]
         },
         maxrank: 3,
         cooldown: [140, 115, 90],
@@ -937,7 +937,7 @@ export const champions: IChampion[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -952,10 +952,10 @@ export const champions: IChampion[] = [
           x: 288,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
     name: 'Camille',
     title: 'the Steel Shadow',
@@ -966,7 +966,7 @@ export const champions: IChampion[] = [
       x: 336,
       y: 48,
       w: 48,
-      h: 48,
+      h: 48
     },
     passive: {
       name: 'Adaptive Defenses',
@@ -979,9 +979,9 @@ export const champions: IChampion[] = [
         x: 336,
         y: 48,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Cassiopeia',
@@ -998,8 +998,8 @@ export const champions: IChampion[] = [
           effect: [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ e3 }}% -> {{ e3NL }}%',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [3.5, 3.5, 3.5, 3.5, 3.5],
@@ -1018,7 +1018,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -1031,7 +1031,7 @@ export const champions: IChampion[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -1045,9 +1045,9 @@ export const champions: IChampion[] = [
           x: 336,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaW',
@@ -1062,8 +1062,8 @@ export const champions: IChampion[] = [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ e2 }}% -> {{ e2NL }}%',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [24, 22, 20, 18, 16],
@@ -1082,7 +1082,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -1095,7 +1095,7 @@ export const champions: IChampion[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -1109,9 +1109,9 @@ export const champions: IChampion[] = [
           x: 384,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaE',
@@ -1124,13 +1124,13 @@ export const champions: IChampion[] = [
           label: [
             'Bonus Poison Damage',
             'Healing from Ability Power',
-            '@AbilityResourceName@ Cost',
+            '@AbilityResourceName@ Cost'
           ],
           effect: [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ healratio*100.000000 }}% -> {{ healrationl*100.000000 }}%',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [0.75, 0.75, 0.75, 0.75, 0.75],
@@ -1149,7 +1149,7 @@ export const champions: IChampion[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -1162,7 +1162,7 @@ export const champions: IChampion[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -1176,9 +1176,9 @@ export const champions: IChampion[] = [
           x: 432,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaR',
@@ -1191,8 +1191,8 @@ export const champions: IChampion[] = [
           label: ['Damage', 'Cooldown'],
           effect: [
             '{{ rbasedamage }} -> {{ rbasedamageNL }}',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -1211,7 +1211,7 @@ export const champions: IChampion[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1226,10 +1226,10 @@ export const champions: IChampion[] = [
           x: 0,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
     name: 'Cassiopeia',
     title: "the Serpent's Embrace",
@@ -1240,7 +1240,7 @@ export const champions: IChampion[] = [
       x: 384,
       y: 48,
       w: 48,
-      h: 48,
+      h: 48
     },
     passive: {
       name: 'Serpentine Grace',
@@ -1253,10 +1253,10 @@ export const champions: IChampion[] = [
         x: 384,
         y: 48,
         w: 48,
-        h: 48,
-      },
-    },
-  },
+        h: 48
+      }
+    }
+  }
 ];
 
 export const championsFull: IChampionFull[] = [
@@ -1269,52 +1269,53 @@ export const championsFull: IChampionFull[] = [
         id: '266000',
         num: 0,
         name: 'default',
-        chromas: false,
+        chromas: false
       },
       {
         id: '266001',
         num: 1,
         name: 'Justicar Aatrox',
-        chromas: false,
+        chromas: false
       },
       {
         id: '266002',
         num: 2,
         name: 'Mecha Aatrox',
-        chromas: true,
+        chromas: true
       },
       {
         id: '266003',
         num: 3,
         name: 'Sea Hunter Aatrox',
-        chromas: false,
+        chromas: false
       },
       {
         id: '266007',
         num: 7,
         name: 'Blood Moon Aatrox',
-        chromas: false,
+        chromas: false
       },
       {
         id: '266008',
         num: 8,
         name: 'Blood Moon Aatrox Prestige Edition',
-        chromas: false,
+        chromas: false
       },
       {
         id: '266009',
         num: 9,
         name: 'Victorious Aatrox',
-        chromas: true,
+        chromas: true
       },
       {
         id: '266011',
         num: 11,
         name: 'Odyssey Aatrox',
-        chromas: true,
-      },
+        chromas: true
+      }
     ],
-    lore: 'Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.',
+    lore:
+      'Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.',
     spells: [
       {
         id: 'AatroxQ',
@@ -1328,8 +1329,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ qbasedamage }} -> {{ qbasedamageNL }}',
-            '{{ qtotaladratio*100.000000 }}% -> {{ qtotaladrationl*100.000000 }}%',
-          ],
+            '{{ qtotaladratio*100.000000 }}% -> {{ qtotaladrationl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [14, 12, 10, 8, 6],
@@ -1348,7 +1349,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1363,9 +1364,9 @@ export const championsFull: IChampionFull[] = [
           x: 240,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxW',
@@ -1378,8 +1379,8 @@ export const championsFull: IChampionFull[] = [
           label: ['Cooldown', 'Damage'],
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ wbasedamage }} -> {{ wbasedamageNL }}',
-          ],
+            '{{ wbasedamage }} -> {{ wbasedamageNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [20, 18.5, 17, 15.5, 14],
@@ -1398,7 +1399,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1413,9 +1414,9 @@ export const championsFull: IChampionFull[] = [
           x: 288,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxE',
@@ -1429,8 +1430,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ espellvamp }}% -> {{ espellvampNL }}%',
-            '{{ espellvampempowered }}% -> {{ espellvampempoweredNL }}%',
-          ],
+            '{{ espellvampempowered }}% -> {{ espellvampempoweredNL }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [9, 8, 7, 6, 5],
@@ -1449,7 +1450,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1464,9 +1465,9 @@ export const championsFull: IChampionFull[] = [
           x: 336,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
+        resource: 'No Cost'
       },
       {
         id: 'AatroxR',
@@ -1480,14 +1481,14 @@ export const championsFull: IChampionFull[] = [
             'Total Attack Damage Increase',
             'Healing Increase',
             'Move Speed',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ rtotaladamp*100.000000 }}% -> {{ rtotaladampnl*100.000000 }}%',
             '{{ rhealingamp*100.000000 }}% -> {{ rhealingampnl*100.000000 }}%',
             '{{ rmovementspeedbonus*100.000000 }}% -> {{ rmovementspeedbonusnl*100.000000 }}%',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -1506,7 +1507,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1521,10 +1522,10 @@ export const championsFull: IChampionFull[] = [
           x: 384,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: 'No Cost',
-      },
+        resource: 'No Cost'
+      }
     ],
     passive: {
       name: 'Deathbringer Stance',
@@ -1537,9 +1538,9 @@ export const championsFull: IChampionFull[] = [
         x: 0,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Annie',
@@ -1550,88 +1551,89 @@ export const championsFull: IChampionFull[] = [
         id: '1000',
         num: 0,
         name: 'default',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1001',
         num: 1,
         name: 'Goth Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1002',
         num: 2,
         name: 'Red Riding Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1003',
         num: 3,
         name: 'Annie in Wonderland',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1004',
         num: 4,
         name: 'Prom Queen Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1005',
         num: 5,
         name: 'Frostfire Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1006',
         num: 6,
         name: 'Reverse Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1007',
         num: 7,
         name: 'FrankenTibbers Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1008',
         num: 8,
         name: 'Panda Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1009',
         num: 9,
         name: 'Sweetheart Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1010',
         num: 10,
         name: 'Hextech Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1011',
         num: 11,
         name: 'Super Galaxy Annie',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1012',
         num: 12,
         name: 'Annie-Versary',
-        chromas: false,
+        chromas: false
       },
       {
         id: '1013',
         num: 13,
         name: 'Lunar Beast Annie',
-        chromas: true,
-      },
+        chromas: true
+      }
     ],
-    lore: 'Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable, emotional outbursts, though she eventually learned to control these “playful tricks.” Her favorite includes the summoning of her beloved teddy bear, Tibbers, as a fiery protector. Lost in the perpetual innocence of childhood, Annie wanders the dark forests, always looking for someone to play with.',
+    lore:
+      'Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable, emotional outbursts, though she eventually learned to control these “playful tricks.” Her favorite includes the summoning of her beloved teddy bear, Tibbers, as a fiery protector. Lost in the perpetual innocence of childhood, Annie wanders the dark forests, always looking for someone to play with.',
     spells: [
       {
         id: 'AnnieQ',
@@ -1644,8 +1646,8 @@ export const championsFull: IChampionFull[] = [
           label: ['Damage', '@AbilityResourceName@ Cost'],
           effect: [
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [4, 4, 4, 4, 4],
@@ -1664,7 +1666,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1679,9 +1681,9 @@ export const championsFull: IChampionFull[] = [
           x: 144,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieW',
@@ -1694,8 +1696,8 @@ export const championsFull: IChampionFull[] = [
           label: ['Damage', '@AbilityResourceName@ Cost'],
           effect: [
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [8, 8, 8, 8, 8],
@@ -1714,7 +1716,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1729,9 +1731,9 @@ export const championsFull: IChampionFull[] = [
           x: 192,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieE',
@@ -1745,8 +1747,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ shieldamount }} -> {{ shieldamountNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ damagereflection }} -> {{ damagereflectionNL }}',
-          ],
+            '{{ damagereflection }} -> {{ damagereflectionNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [14, 13, 12, 11, 10],
@@ -1765,7 +1767,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1780,9 +1782,9 @@ export const championsFull: IChampionFull[] = [
           x: 240,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'AnnieR',
@@ -1798,7 +1800,7 @@ export const championsFull: IChampionFull[] = [
             'Aura Damage',
             'Tibbers Attack Damage',
             'Bonus Resistances',
-            'Bonus Health',
+            'Bonus Health'
           ],
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
@@ -1806,8 +1808,8 @@ export const championsFull: IChampionFull[] = [
             '{{ auradamage }} -> {{ auradamageNL }}',
             '{{ tibbersattackdamage }} -> {{ tibbersattackdamageNL }}',
             '{{ bonusresistances }} -> {{ bonusresistancesNL }}',
-            '{{ bonushealth }} -> {{ bonushealthNL }}',
-          ],
+            '{{ bonushealth }} -> {{ bonushealthNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -1826,7 +1828,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1841,10 +1843,10 @@ export const championsFull: IChampionFull[] = [
           x: 288,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
     passive: {
       name: 'Pyromania',
@@ -1857,9 +1859,9 @@ export const championsFull: IChampionFull[] = [
         x: 336,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Anivia',
@@ -1870,68 +1872,68 @@ export const championsFull: IChampionFull[] = [
         id: '34000',
         num: 0,
         name: 'default',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34001',
         num: 1,
         name: 'Team Spirit Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34002',
         num: 2,
         name: 'Bird of Prey Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34003',
         num: 3,
         name: 'Noxus Hunter Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34004',
         num: 4,
         name: 'Hextech Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34005',
         num: 5,
         name: 'Blackfrost Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34006',
         num: 6,
         name: 'Prehistoric Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34007',
         num: 7,
         name: 'Festival Queen Anivia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '34008',
         num: 8,
         name: 'Papercraft Anivia',
-        chromas: true,
+        chromas: true
       },
       {
         id: '34017',
         num: 17,
         name: 'Cosmic Flight Anivia',
-        chromas: true,
+        chromas: true
       },
       {
         id: '34027',
         num: 27,
         name: 'Divine Phoenix Anivia',
-        chromas: true,
-      },
+        chromas: true
+      }
     ],
     spells: [
       {
@@ -1947,15 +1949,15 @@ export const championsFull: IChampionFull[] = [
             'Detonation Damage',
             'Stun Duration',
             'Cooldown',
-            '@AbilityResourceName@ Cost',
+            '@AbilityResourceName@ Cost'
           ],
           effect: [
             '{{ passthroughbasedamage }} -> {{ passthroughbasedamageNL }}',
             '{{ explosionbasedamage }} -> {{ explosionbasedamageNL }}',
             '{{ stunduration }} -> {{ stundurationNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [11, 10, 9, 8, 7],
@@ -1974,7 +1976,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -1989,9 +1991,9 @@ export const championsFull: IChampionFull[] = [
           x: 432,
           y: 144,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'Crystallize',
@@ -2002,7 +2004,7 @@ export const championsFull: IChampionFull[] = [
           'Anivia summons a wall of ice {{ e2 }} units wide. The wall lasts for {{ e1 }} seconds before it melts.',
         leveltip: {
           label: ['Width'],
-          effect: ['{{ e2 }} -> {{ e2NL }}'],
+          effect: ['{{ e2 }} -> {{ e2NL }}']
         },
         maxrank: 5,
         cooldown: [17, 17, 17, 17, 17],
@@ -2021,7 +2023,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -2034,7 +2036,7 @@ export const championsFull: IChampionFull[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -2048,9 +2050,9 @@ export const championsFull: IChampionFull[] = [
           x: 0,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'Frostbite',
@@ -2061,7 +2063,7 @@ export const championsFull: IChampionFull[] = [
           'Anivia blasts an enemy with a freezing wind, dealing <magicDamage>{{ totaldamage }} magic damage</magicDamage>. Against <keywordMajor>Chilled</keywordMajor> enemies, Anivia deals <magicDamage>{{ empowereddamage }} magic damage</magicDamage> instead.',
         leveltip: {
           label: ['Damage'],
-          effect: ['{{ basedamage }} -> {{ basedamageNL }}'],
+          effect: ['{{ basedamage }} -> {{ basedamageNL }}']
         },
         maxrank: 5,
         cooldown: [4, 4, 4, 4, 4],
@@ -2080,7 +2082,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2095,9 +2097,9 @@ export const championsFull: IChampionFull[] = [
           x: 48,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'GlacialStorm',
@@ -2112,15 +2114,15 @@ export const championsFull: IChampionFull[] = [
             'Slow',
             'Chilled Slow Amount',
             'Mana Cost Per Second',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ damagepersecond }} -> {{ damagepersecondNL }}',
             '{{ slowamount }}% -> {{ slowamountNL }}%',
             '{{ slowpercentempoweredtt }}% -> {{ slowpercentempoweredttNL }}%',
             '{{ manacostpersecond }} -> {{ manacostpersecondNL }}',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [4, 3, 2],
@@ -2139,7 +2141,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2154,12 +2156,13 @@ export const championsFull: IChampionFull[] = [
           x: 96,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} + {{ manacostpersecond }} Mana per second',
-      },
+        resource: '{{ cost }} + {{ manacostpersecond }} Mana per second'
+      }
     ],
-    lore: 'Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who revere her as a symbol of hope, and a portent of great change. She fights with every ounce of her being, knowing that through her sacrifice, her memory will endure, and she will be reborn into a new tomorrow.',
+    lore:
+      'Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who revere her as a symbol of hope, and a portent of great change. She fights with every ounce of her being, knowing that through her sacrifice, her memory will endure, and she will be reborn into a new tomorrow.',
     passive: {
       name: 'Rebirth',
       description:
@@ -2171,9 +2174,9 @@ export const championsFull: IChampionFull[] = [
         x: 288,
         y: 0,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Camille',
@@ -2184,32 +2187,32 @@ export const championsFull: IChampionFull[] = [
         id: '164000',
         num: 0,
         name: 'default',
-        chromas: false,
+        chromas: false
       },
       {
         id: '164001',
         num: 1,
         name: 'Program Camille',
-        chromas: false,
+        chromas: false
       },
       {
         id: '164002',
         num: 2,
         name: 'Coven Camille',
-        chromas: true,
+        chromas: true
       },
       {
         id: '164010',
         num: 10,
         name: 'iG Camille',
-        chromas: false,
+        chromas: false
       },
       {
         id: '164011',
         num: 11,
         name: 'Arcana Camille',
-        chromas: true,
-      },
+        chromas: true
+      }
     ],
     spells: [
       {
@@ -2224,8 +2227,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ tadratio*100.000000 }}% -> {{ tadrationl*100.000000 }}%',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ msbonus*100.000000 }}% -> {{ msbonusnl*100.000000 }}%',
-          ],
+            '{{ msbonus*100.000000 }}% -> {{ msbonusnl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [9, 8.25, 7.5, 6.75, 6],
@@ -2244,7 +2247,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2259,9 +2262,9 @@ export const championsFull: IChampionFull[] = [
           x: 144,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleW',
@@ -2275,14 +2278,14 @@ export const championsFull: IChampionFull[] = [
             '@AbilityResourceName@ Cost',
             'Damage',
             'Maximum Health Damage',
-            'Cooldown',
+            'Cooldown'
           ],
           effect: [
             '{{ cost }} -> {{ costNL }}',
             '{{ basedamage }} -> {{ basedamageNL }}',
             '{{ outerconemaxhpdamage*100.000000 }}% -> {{ outerconemaxhpdamagenl*100.000000 }}%',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [17, 15.5, 14, 12.5, 11],
@@ -2301,7 +2304,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2316,9 +2319,9 @@ export const championsFull: IChampionFull[] = [
           x: 192,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleE',
@@ -2332,8 +2335,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ basedamage }} -> {{ basedamageNL }}',
-            '{{ asbuff*100.000000 }}% -> {{ asbuffnl*100.000000 }}%',
-          ],
+            '{{ asbuff*100.000000 }}% -> {{ asbuffnl*100.000000 }}%'
+          ]
         },
         maxrank: 5,
         cooldown: [16, 14.5, 13, 11.5, 10],
@@ -2352,7 +2355,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2367,9 +2370,9 @@ export const championsFull: IChampionFull[] = [
           x: 240,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CamilleR',
@@ -2383,14 +2386,14 @@ export const championsFull: IChampionFull[] = [
             'Duration',
             'Cooldown',
             'Bonus Damage',
-            'Current Health Damage',
+            'Current Health Damage'
           ],
           effect: [
             '{{ rduration }} -> {{ rdurationNL }}',
             '{{ cooldown }} -> {{ cooldownNL }}',
             '{{ ronhitdamage }} -> {{ ronhitdamageNL }}',
-            '{{ rpercentcurrenthpdamage }}% -> {{ rpercentcurrenthpdamageNL }}%',
-          ],
+            '{{ rpercentcurrenthpdamage }}% -> {{ rpercentcurrenthpdamageNL }}%'
+          ]
         },
         maxrank: 3,
         cooldown: [140, 115, 90],
@@ -2409,7 +2412,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2424,12 +2427,13 @@ export const championsFull: IChampionFull[] = [
           x: 288,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
-    lore: "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros—an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy technique as an embarrassment that must be put to order. With a mind as sharp as the blades she bears, Camille's pursuit of superiority through hextech body augmentation has left many to wonder if she is now more machine than woman.",
+    lore:
+      "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros—an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy technique as an embarrassment that must be put to order. With a mind as sharp as the blades she bears, Camille's pursuit of superiority through hextech body augmentation has left many to wonder if she is now more machine than woman.",
     passive: {
       name: 'Adaptive Defenses',
       description:
@@ -2441,9 +2445,9 @@ export const championsFull: IChampionFull[] = [
         x: 336,
         y: 48,
         w: 48,
-        h: 48,
-      },
-    },
+        h: 48
+      }
+    }
   },
   {
     id: 'Cassiopeia',
@@ -2454,50 +2458,50 @@ export const championsFull: IChampionFull[] = [
         id: '69000',
         num: 0,
         name: 'default',
-        chromas: true,
+        chromas: true
       },
       {
         id: '69001',
         num: 1,
         name: 'Desperada Cassiopeia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '69002',
         num: 2,
         name: 'Siren Cassiopeia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '69003',
         num: 3,
         name: 'Mythic Cassiopeia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '69004',
         num: 4,
         name: 'Jade Fang Cassiopeia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '69008',
         num: 8,
         name: 'Eternum Cassiopeia',
-        chromas: false,
+        chromas: false
       },
       {
         id: '69009',
         num: 9,
         name: 'Spirit Blossom Cassiopeia',
-        chromas: true,
+        chromas: true
       },
       {
         id: '69018',
         num: 18,
         name: 'Coven Cassiopeia',
-        chromas: true,
-      },
+        chromas: true
+      }
     ],
     spells: [
       {
@@ -2512,8 +2516,8 @@ export const championsFull: IChampionFull[] = [
           effect: [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ e3 }}% -> {{ e3NL }}%',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [3.5, 3.5, 3.5, 3.5, 3.5],
@@ -2532,7 +2536,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -2545,7 +2549,7 @@ export const championsFull: IChampionFull[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -2559,9 +2563,9 @@ export const championsFull: IChampionFull[] = [
           x: 336,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaW',
@@ -2576,8 +2580,8 @@ export const championsFull: IChampionFull[] = [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ e2 }}% -> {{ e2NL }}%',
             '{{ cooldown }} -> {{ cooldownNL }}',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [24, 22, 20, 18, 16],
@@ -2596,7 +2600,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -2609,7 +2613,7 @@ export const championsFull: IChampionFull[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -2623,9 +2627,9 @@ export const championsFull: IChampionFull[] = [
           x: 384,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaE',
@@ -2638,13 +2642,13 @@ export const championsFull: IChampionFull[] = [
           label: [
             'Bonus Poison Damage',
             'Healing from Ability Power',
-            '@AbilityResourceName@ Cost',
+            '@AbilityResourceName@ Cost'
           ],
           effect: [
             '{{ e1 }} -> {{ e1NL }}',
             '{{ healratio*100.000000 }}% -> {{ healrationl*100.000000 }}%',
-            '{{ cost }} -> {{ costNL }}',
-          ],
+            '{{ cost }} -> {{ costNL }}'
+          ]
         },
         maxrank: 5,
         cooldown: [0.75, 0.75, 0.75, 0.75, 0.75],
@@ -2663,7 +2667,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
           [0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0]
         ],
         effectBurn: [
           null,
@@ -2676,7 +2680,7 @@ export const championsFull: IChampionFull[] = [
           '0',
           '0',
           '0',
-          '0',
+          '0'
         ],
         vars: [],
         costType: ' {{ abilityresourcename }}',
@@ -2690,9 +2694,9 @@ export const championsFull: IChampionFull[] = [
           x: 432,
           y: 0,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
+        resource: '{{ cost }} {{ abilityresourcename }}'
       },
       {
         id: 'CassiopeiaR',
@@ -2705,8 +2709,8 @@ export const championsFull: IChampionFull[] = [
           label: ['Damage', 'Cooldown'],
           effect: [
             '{{ rbasedamage }} -> {{ rbasedamageNL }}',
-            '{{ cooldown }} -> {{ cooldownNL }}',
-          ],
+            '{{ cooldown }} -> {{ cooldownNL }}'
+          ]
         },
         maxrank: 3,
         cooldown: [120, 100, 80],
@@ -2725,7 +2729,7 @@ export const championsFull: IChampionFull[] = [
           [0, 0, 0],
           [0, 0, 0],
           [0, 0, 0],
-          [0, 0, 0],
+          [0, 0, 0]
         ],
         effectBurn: [null, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
         vars: [],
@@ -2740,12 +2744,13 @@ export const championsFull: IChampionFull[] = [
           x: 0,
           y: 48,
           w: 48,
-          h: 48,
+          h: 48
         },
-        resource: '{{ cost }} {{ abilityresourcename }}',
-      },
+        resource: '{{ cost }} {{ abilityresourcename }}'
+      }
     ],
-    lore: 'Cassiopeia is a deadly creature bent on manipulating others to her sinister will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was bitten by a gruesome tomb guardian, whose venom transformed her into a viper-like predator. Cunning and agile, Cassiopeia now slithers under the veil of night, petrifying her enemies with her baleful gaze.',
+    lore:
+      'Cassiopeia is a deadly creature bent on manipulating others to her sinister will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was bitten by a gruesome tomb guardian, whose venom transformed her into a viper-like predator. Cunning and agile, Cassiopeia now slithers under the veil of night, petrifying her enemies with her baleful gaze.',
     passive: {
       name: 'Serpentine Grace',
       description:
@@ -2757,8 +2762,8 @@ export const championsFull: IChampionFull[] = [
         x: 384,
         y: 48,
         w: 48,
-        h: 48,
-      },
-    },
-  },
+        h: 48
+      }
+    }
+  }
 ];

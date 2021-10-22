@@ -17,7 +17,7 @@ const AuthForm = () => {
         <Button
           className="btnSwitch"
           color="orange"
-          onClick={() => setIsRegistration((prev) => !prev)}
+          onClick={() => setIsRegistration(prev => !prev)}
         >
           {isRegistration ? 'Sign up' : 'Registration new account'}
         </Button>

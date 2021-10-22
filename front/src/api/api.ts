@@ -3,7 +3,7 @@ import IChampion from '../dto/IChampion';
 import { IChampionFull } from '../dto/IChampuionFull';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:3001/',
+  baseURL: 'http://localhost:3001/'
 });
 
 export const getCardsApi = async () => {
