@@ -1,9 +1,9 @@
 export default interface Image {
-  full: string,
-  sprite: string,
-  group: string,
-  x: number,
-  y: number,
-  w: number,
-  h: number
+  full: string;
+  sprite: string;
+  group: string;
+  x: number;
+  y: number;
+  w: number;
+  h: number;
 }
