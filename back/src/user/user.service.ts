@@ -1,9 +1,9 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { JwtService } from '@nestjs/jwt';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { UserDocument } from '../shemas/user.schema';
 import { UserDto } from '../dto/user.dto';
-import { JwtService } from '@nestjs/jwt';
 
 @Injectable()
 export class UserService {
@@ -24,6 +24,7 @@ export class UserService {
   async getUser(token: string) {
     const user = this.jwtService.decode(token);
     if (!user) throw new UnauthorizedException('Error authorization');
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     return this.userModel.findOne(user);
   }
