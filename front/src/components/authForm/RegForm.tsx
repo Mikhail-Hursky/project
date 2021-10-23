@@ -2,8 +2,13 @@ import React from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { registrationApi } from '../../api/api';
 
-const RegForm = () => {
+interface Props {
+  setIsLoader(isLoader: boolean): void;
+}
+
+const RegForm = ({ setIsLoader }: Props) => {
   const formikReg = useFormik({
     initialValues: {
       name: '',
@@ -20,7 +25,8 @@ const RegForm = () => {
         .required('Required to fill')
     }),
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      setIsLoader(true);
+      registrationApi(values).then(() => setIsLoader(false));
     }
   });
 

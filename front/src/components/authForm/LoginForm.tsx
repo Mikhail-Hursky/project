@@ -2,8 +2,13 @@ import React from 'react';
 import { Button, Form } from 'semantic-ui-react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { loginApi } from '../../api/api';
 
-const LoginForm = () => {
+interface Props {
+  setIsLoader(isLoader: boolean): void;
+}
+
+const LoginForm = ({ setIsLoader }: Props) => {
   const formikLogin = useFormik({
     initialValues: {
       email: '',
@@ -18,7 +23,10 @@ const LoginForm = () => {
         .required('Required to fill')
     }),
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      setIsLoader(true);
+      loginApi(values).then(() => {
+        setIsLoader(false);
+      });
     }
   });
 

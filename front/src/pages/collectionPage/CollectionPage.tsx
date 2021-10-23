@@ -7,6 +7,7 @@ import { IRootReducer } from '../../redux/store';
 import { fetchCardsData } from '../../redux/cardReducer/cardReducer';
 import './Collection.scss';
 import IChampion from '../../dto/IChampion';
+import { getUserApi } from '../../api/api';
 
 function CollectionPage() {
   const dispatch = useDispatch();
@@ -19,7 +20,7 @@ function CollectionPage() {
   });
 
   useEffect(() => {
-    if (cards.length === 0) dispatch(fetchCardsData());
+    getUserApi().then(() => dispatch(fetchCardsData()));
   }, []);
 
   useEffect(() => {

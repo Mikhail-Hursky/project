@@ -1,17 +1,20 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import cardsReducer, { ICardReducer } from './cardReducer/cardReducer';
 import championReducer, {
   IChampionReducer
 } from './championReducer/championReducer';
+import cardReducer, { ICardReducer } from './cardReducer2/cardReducer';
+import userReducer, { IUserReducer } from './userReducer/userReducer';
 
 export interface IRootReducer {
   card: ICardReducer;
   champion: IChampionReducer;
+  user: IUserReducer;
 }
 
 const rootReducer = combineReducers<IRootReducer>({
-  card: cardsReducer,
-  champion: championReducer
+  champion: championReducer,
+  user: userReducer,
+  card: cardReducer
 });
 
 const store = configureStore({
