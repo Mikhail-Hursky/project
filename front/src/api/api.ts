@@ -8,7 +8,7 @@ import IUserReg from '../dto/IUserReg';
 import IMessage from '../dto/IMessage';
 import IToken from '../dto/IToken';
 import store from '../redux/store';
-import { addToken, addUser } from '../redux/userReducer/userReducer';
+import { addToken, addUser, logout } from '../redux/userReducer/userReducer';
 import IUser from '../dto/IUser';
 
 const headers = {
@@ -22,21 +22,39 @@ const instance = axios.create({
 });
 
 export const getCardsApi = async () => {
-  return await instance.get<IChampion[]>('card');
+  return await instance.get<IChampion[]>('card', {
+    headers: {
+      ...headers,
+      Authorization: `Bearer ${localStorage.getItem(AUTH_TOKEN)}`
+    }
+  });
 };
 
 export const getFullCardApi = async (id: string) => {
-  return await instance.get<IChampionFull>(`card/full?id=${id}`);
+  return await instance.get<IChampionFull>(`card/full?id=${id}`, {
+    headers: {
+      ...headers,
+      Authorization: `Bearer ${localStorage.getItem(AUTH_TOKEN)}`
+    }
+  });
 };
 
 export const getUserApi = async () => {
   return await instance
-    .get<IUser>('user')
+    .get<IUser>('user', {
+      headers: {
+        ...headers,
+        Authorization: `Bearer ${localStorage.getItem(AUTH_TOKEN)}`
+      }
+    })
     .then(res => {
       console.log(res);
       store.dispatch(addUser(res.data));
     })
-    .catch((res: AxiosError<IMessage>) => message.error(res.message));
+    .catch((res: AxiosError<IMessage>) => {
+      store.dispatch(logout());
+      message.error(res.message);
+    });
 };
 
 export const registrationApi = async (dto: IUserReg) => {
@@ -52,6 +70,7 @@ export const loginApi = async (dto: IUserAuth) => {
   return await instance
     .post<IToken>('auth/login', dto)
     .then(res => {
+      console.log(res.data.token);
       localStorage.setItem(AUTH_TOKEN, res.data.token);
       store.dispatch(addToken(res.data.token));
     })

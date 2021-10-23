@@ -1,5 +1,6 @@
-export const COLLECTION_CHAMPION = '/collection/:nameId';
-export const COLLECTION = '/collection';
+export const COLLECTION_CHAMPION = '/project/collection/:nameId';
+export const COLLECTION = '/project/collection';
+export const DEFAULT_ROUT = '/project';
 
 export const CARD_IMG =
   'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/';

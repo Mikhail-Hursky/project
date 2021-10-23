@@ -18,7 +18,7 @@ function CollectionPage() {
     page: 1,
     pageSize: 24
   });
-
+  console.log('CollectionPage');
   useEffect(() => {
     getUserApi().then(() => dispatch(fetchCardsData()));
   }, []);

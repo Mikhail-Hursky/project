@@ -13,10 +13,10 @@ function ChampionPage() {
   const history = useHistory();
   const dispatch = useDispatch();
   const champ = useSelector((state: IRootReducer) => state.champion.champion);
+  console.log('ChampionPage');
 
-  // @ts-ignore
-  useEffect(async () => {
-    dispatch(fetchChampion(history.location.pathname.split('/')[2]));
+  useEffect(() => {
+    dispatch(fetchChampion(history.location.pathname.split('/')[3]));
   }, []);
 
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import AuthPage from '../../pages/authPage/AuthPage';
-import { COLLECTION } from '../../Constants';
+import { COLLECTION, DEFAULT_ROUT } from '../../Constants';
 import { useSelector } from 'react-redux';
 import { IRootReducer } from '../../redux/store';
 
@@ -16,7 +16,7 @@ const AuthProvider = ({ children }: Props) => {
   useEffect(() => {
     if (isAuth) {
       history.push(
-        history.location.pathname === '/'
+        history.location.pathname === DEFAULT_ROUT
           ? COLLECTION
           : history.location.pathname
       );
