@@ -26,7 +26,7 @@ let AuthService = class AuthService {
     async registration(dto) {
         const candidate = await this.userService.getUserByEmail(dto.email);
         if (candidate) {
-            return new common_1.HttpException('Пользователь с таким email уже существует', common_1.HttpStatus.BAD_REQUEST);
+            return new common_1.HttpException('User with this email already exists', common_1.HttpStatus.BAD_REQUEST);
         }
         const hashPassword = await bcrypt.hash(dto.password, +process.env.SALT);
         await this.userService.createUser(Object.assign(Object.assign({}, dto), { password: hashPassword }));
