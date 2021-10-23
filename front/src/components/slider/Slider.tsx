@@ -2,6 +2,7 @@ import React from 'react';
 import Slider, { LazyLoadTypes, Settings, ResponsiveObject } from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Image } from 'antd';
 import { ISkin } from '../../dto/IChampuionFull';
 import { SPLASH_IMG } from '../../Constants';
 import './Slider.scss';
@@ -41,7 +42,17 @@ const SliderChamp = ({ skins, name }: Props) => {
       <Slider {...settings}>
         {skins.map(el => (
           <div key={el.name} className="slider__item">
-            <img src={`${SPLASH_IMG}${name}_${el.num}.jpg`} alt="" />
+            <Image
+              width="100%"
+              src={`${SPLASH_IMG}${name}_${el.num}.jpg`}
+              placeholder={
+                <Image
+                  preview={false}
+                  src="https://thumbs.gfycat.com/AdorableMajesticJellyfish-size_restricted.gif"
+                  width="100%"
+                />
+              }
+            />
             <h3>{el.name === 'default' ? name : el.name}</h3>
           </div>
         ))}

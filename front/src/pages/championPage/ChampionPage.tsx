@@ -34,7 +34,7 @@ function ChampionPage() {
             spells={champ.spells}
             lore={champ.lore}
           />
-          <Slider skins={champ.skins} name={champ.name} />
+          <Slider skins={champ.skins} name={champ.id} />
         </div>
       ) : (
         <Spin style={{ flex: 1 }} size="large" />
