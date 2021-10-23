@@ -1,9 +1,0 @@
-import { UserService } from './user.service';
-export declare class UserController {
-    private readonly userService;
-    constructor(userService: UserService);
-    getUserByEmail(headers: any): Promise<{
-        email: string;
-        name: string;
-    }>;
-}
