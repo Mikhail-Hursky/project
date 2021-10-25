@@ -5,14 +5,32 @@
   padding: 25px;
   border-radius: 15px;
   background-color: rgba(41, 44, 49, 0.7);
-  color: #FFFFFF;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  .ui.form .field>label {
-      color: #FFFFFF;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+  h2 {
+    color: white;
+  }
+
+  .ui.form .field > label {
+    color: white;
   }
 
   .btnSwitch {
     margin-top: 15px;
     align-self: end;
   }
+}
+
+.loader {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
 }
